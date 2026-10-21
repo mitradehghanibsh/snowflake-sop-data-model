@@ -78,7 +78,15 @@ erDiagram
 | Sales date out of range | 0 |
 
 (Numbers vary slightly between runs because the data generator uses `RANDOM`.)
+## Screenshots
 
+**Data quality checks**
+
+![DQ checks](screenshots/V_DQ_CHECKES_RESULT.png)
+
+**Stock coverage view**
+
+![Stock coverage](screenshots/V_STOCK_COVERAGE_RESULT.png)
 ## S&OP views
 
 - `MART.V_MONTHLY_SALES` - monthly quantity and sales per product
