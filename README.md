@@ -109,3 +109,7 @@ Virtual warehouses (auto-suspend), schemas, `GENERATOR`, `QUALIFY`, `TRY_*` func
 - Incremental loads with `MERGE`, streams and tasks
 - Add a forecast fact table and a forecast-vs-actual view
 - Connect the views to a BI tool (e.g. Power BI)
+
+## Automation
+
+`pipeline_tasks.sql` automates the STAGING and MART refresh with Snowflake Scripting stored procedures and a task graph (`T_REFRESH_STAGING` → `T_REFRESH_MART`). Every run is logged in `OPS.PIPELINE_LOG`, and the run fails if the reconciliation (clean rows = loaded rows + rejected rows) is not zero.
